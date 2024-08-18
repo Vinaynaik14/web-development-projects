@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 10px black;
+            margin: 20px auto;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .movie-card {
+            background-color: #fff;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 200px;
+            box-shadow:10px 5px 5px rgba(57, 55, 55, 0.1);
+        }
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+        .movie-card .info {
+            padding: 10px;
+        }
+        .movie-card .info h3 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+        .movie-card .info p {
+            margin: 0;
+            color: #444242;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Library</h1>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies...">
+        </div>
+        <div class="movies">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <img src='devil/200x300' alt="Movie Poster">
+                <div class="info">
+                    <h3>Devil</h3>
+                    <p>Release Year: 2023</p>
+                </div>
+            </div>
+            <!-- Movie Card 2 -->
+            <div class="movie-card">
+                <img src="kushi.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Kushi</h3>
+                    <p>Release Year: 2023</p>
+                </div>
+            </div>
+            <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <img src='thewarrior.jpg/200x300' alt="Movie Poster">
+                <div class="info">
+                    <h3>The Warrior</h3>
+                    <p>Release Year: 2022</p>
+                </div>
+            </div>
+            <!-- Movie Card 4 -->
+            <div class="movie-card">
+                <img src="bheemlanayak.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Bheemla Nayak</h3>
+                    <p>Release Year: 2022</p>
+                </div>
+            </div>
+            <!-- Movie Card 5 -->
+            <div class="movie-card">
+                <img src="gabbarsingh.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Gabbar Singh</h3>
+                    <p>Release Year: 2012</p>
+                </div>
+            </div>
+            <!-- Movie Card 6-->
+            <div class="movie-card">
+                <img src='tholiprema.jpg/200x300' alt="Movie Poster">
+                <div class="info">
+                    <h3>Tholi Prema</h3>
+                    <p>Release Year: 1998</p>
+                </div>
+            </div>
+            <!-- Movie Card 7 -->
+            <div class="movie-card">
+                <img src="atharintikidaaredi.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Atharintiki Daaredi</h3>
+                    <p>Release Year: 2013</p>
+                </div>
+            </div>
+            <!-- Movie Card 8-->
+            <div class="movie-card">
+                <img src="maharaja.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Maharaja</h3>
+                    <p>Release Year: 2024</p>
+                </div>
+            </div>
+            <!-- Movie Card 9 -->
+            <div class="movie-card">
+                <img src='gunturkaaram.jpg/200x300' alt="Movie Poster">
+                <div class="info">
+                    <h3>Guntur Kaaram</h3>
+                    <p>Release Year: 2024</p>
+                </div>
+            </div>
+            <!-- Movie Card 10 -->
+            <div class="movie-card">
+                <img src="gaddalakondaganesh.jpg/200x300" alt="Movie Poster">
+                <div class="info">
+                    <h3>Gaddalakonda Ganesh</h3>
+                    <p>Release Year: 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
