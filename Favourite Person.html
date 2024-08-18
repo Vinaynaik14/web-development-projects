@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Sharma - My Favorite Person</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2a0ba7;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #c4870c;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .details {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .details span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rohit Sharma</h1>
+        <div class="image-container">
+            <img src="1869019.webp" alt="Rohit Sharma" />
+        </div>
+        <div class="details" data-name="Rohit Sharma" data-birth="30-04-1987" data-nationality="Indian" data-profession="Cricketer">
+            <p><span>Name:</span> <span id="name"></span></p>
+            <p><span>Birth Date:</span> <span id="birth"></span></p>
+            <p><span>Nationality:</span> <span id="nationality"></span></p>
+            <p><span>Profession:</span> <span id="profession"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Fetch custom data attributes
+        const details = document.querySelector('.details');
+        document.getElementById('name').innerText = details.dataset.name;
+        document.getElementById('birth').innerText = details.dataset.birth;
+        document.getElementById('nationality').innerText = details.dataset.nationality;
+        document.getElementById('profession').innerText = details.dataset.profession;
+    </script>
+</body>
+</html>
